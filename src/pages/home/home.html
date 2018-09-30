@@ -1,0 +1,19 @@
+<ion-content padding center text-center>
+  <ion-title>Login </ion-title>
+  <ion-list>
+    <ion-item>
+      <ion-input placeholder="username" [(ngModel)]="username" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-input placeholder="password" [(ngModel)]="password" type="password"></ion-input>
+      </ion-item>
+ </ion-list>
+
+<button ion-button full (click)="Login()">
+  <ion-icon ios="ios-log-in" md="md-log-in"></ion-icon>
+Log in</button>
+ <br>
+<button ion-button full color="secondary" (click)="goRegister()">
+  <ion-icon ios="ios-person-add" md="ios-person-add" ></ion-icon>
+Register</button>
+</ion-content>
